@@ -1,3 +1,4 @@
+import 'package:assesment/common/presentation/widget/app_logo.dart';
 import 'package:assesment/features/splash_screen/presentation/controller/splash_screen_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,48 +19,14 @@ class SplashScreenPage extends GetView<SplashScreenController> {
           ),
         ),
         child: Stack(
-          children: [
+          children: const [
             Align(
               alignment: Alignment.center,
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  Image.asset(
-                    "assets/images/logo_temanjabar.png",
-                    width: 58,
-                    height: 80,
-                  ),
-                  const SizedBox(
-                    height: 50,
-                    child: VerticalDivider(
-                      thickness: 2,
-                      color: Colors.black,
-                    ),
-                  ),
-                  Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "ASSESMENT",
-                        style: context.textTheme.headline5
-                            ?.copyWith(fontFamily: "Intro"),
-                      ),
-                      const SizedBox(
-                        height: 6,
-                      ),
-                      Text(
-                        "Sistem Assesment Kepegawaian",
-                        style: context.textTheme.bodyText2
-                            ?.copyWith(fontFamily: "Intro"),
-                      ),
-                    ],
-                  ),
-                ],
+              child: AppLogo(
+                scale: 0.8,
               ),
             ),
-            const Padding(
+            Padding(
               padding: EdgeInsets.only(bottom: 32),
               child: Align(
                 alignment: Alignment.bottomCenter,
