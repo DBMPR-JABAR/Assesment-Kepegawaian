@@ -19,8 +19,8 @@ class AppLogo extends StatelessWidget {
         ),
         SizedBox(
           height: 80 * scale,
-          child: const VerticalDivider(
-            thickness: 2,
+          child: VerticalDivider(
+            thickness: 2 * scale,
             color: Colors.black,
           ),
         ),
@@ -39,11 +39,12 @@ class AppLogo extends StatelessWidget {
               height: 6 * scale,
             ),
             Text(
-              "Sistem Assesment\nKepegawaian",
+              "Sistem Penilaian\nKepegawaian",
               style: context.textTheme.bodyText2?.copyWith(
                   fontFamily: "Intro",
+                  fontWeight: FontWeight.w400,
                   fontSize:
-                      (context.textTheme.headline5?.fontSize ?? 13) * scale),
+                      (context.textTheme.headline6?.fontSize ?? 13) * scale),
             ),
           ],
         ),

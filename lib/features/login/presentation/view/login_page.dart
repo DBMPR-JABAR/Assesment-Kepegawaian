@@ -1,8 +1,10 @@
-import 'package:assesment/common/presentation/widget/app_logo.dart';
+import 'package:assesment/common/presentation/widget/logo/app_logo.dart';
 import 'package:assesment/common/presentation/widget/button/contained_button.dart';
 import 'package:assesment/common/presentation/widget/text_input/label_outlined_text_input.dart';
+import 'package:assesment/core_views/color/color_pallete.dart';
 import 'package:assesment/core_views/color/color_scheme_light.dart';
 import 'package:assesment/features/login/presentation/controller/login_controller.dart';
+import 'package:assesment/utils/color_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -54,8 +56,8 @@ class LoginPage extends GetView<LoginController> {
             ),
           ),
           DraggableScrollableSheet(
-            initialChildSize: 0.65,
-            minChildSize: 0.65,
+            initialChildSize: 0.7,
+            minChildSize: 0.7,
             snap: true,
             builder: (BuildContext context, ScrollController scrollController) {
               return Container(
@@ -73,23 +75,37 @@ class LoginPage extends GetView<LoginController> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       const SizedBox(
-                        height: 32,
+                        height: 8,
+                      ),
+                      Container(
+                        width: 55,
+                        height: 5,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: ColorUtils.fromHex(ColorPallete.gray_300),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 24,
                       ),
                       const AppLogo(
                         scale: 0.5,
                       ),
                       const SizedBox(
-                        height: 16,
+                        height: 32,
                       ),
                       Container(
-                        margin: const EdgeInsets.all(16),
+                        margin: const EdgeInsets.symmetric(horizontal: 16),
                         child: const LabelOutlinedTextInput(
                           label: "NIP/NIK",
                           hint: "Masukkan NIP/NIK",
                         ),
                       ),
+                      const SizedBox(
+                        height: 16,
+                      ),
                       Container(
-                        margin: const EdgeInsets.all(16),
+                        margin: const EdgeInsets.symmetric(horizontal: 16),
                         child: const LabelOutlinedTextInput(
                           label: "Password",
                           hint: "Masukkan Password",
@@ -97,7 +113,7 @@ class LoginPage extends GetView<LoginController> {
                         ),
                       ),
                       const SizedBox(
-                        height: 16,
+                        height: 32,
                       ),
                       Container(
                         margin: const EdgeInsets.symmetric(horizontal: 16),
