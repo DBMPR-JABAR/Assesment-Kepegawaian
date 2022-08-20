@@ -1,4 +1,4 @@
-import 'package:assesment/common/presentation/widget/quiz/answer/quiz_answer.dart';
+import 'package:assesment/features/quiz/presentation/widgets/quiz/answer/quiz_answer.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

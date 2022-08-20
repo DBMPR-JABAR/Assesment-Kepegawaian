@@ -1,4 +1,4 @@
-import 'package:assesment/common/presentation/widget/logo/app_logo.dart';
+import 'package:assesment/common/presentation/widgets/logo/app_logo.dart';
 import 'package:assesment/features/splash_screen/presentation/controller/splash_screen_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

@@ -1,5 +1,5 @@
-import 'package:assesment/common/presentation/widget/label/input_label.dart';
-import 'package:assesment/common/presentation/widget/text_input/outlined_text_input_field.dart';
+import 'package:assesment/common/presentation/widgets/label/input_label.dart';
+import 'package:assesment/common/presentation/widgets/text_input/outlined_text_input_field.dart';
 import 'package:flutter/material.dart';
 
 class LabelOutlinedTextInput extends StatelessWidget {

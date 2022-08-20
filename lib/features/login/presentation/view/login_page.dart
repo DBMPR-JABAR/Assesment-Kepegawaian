@@ -1,6 +1,6 @@
-import 'package:assesment/common/presentation/widget/logo/app_logo.dart';
-import 'package:assesment/common/presentation/widget/button/contained_button.dart';
-import 'package:assesment/common/presentation/widget/text_input/label_outlined_text_input.dart';
+import 'package:assesment/common/presentation/widgets/logo/app_logo.dart';
+import 'package:assesment/common/presentation/widgets/button/contained_button.dart';
+import 'package:assesment/common/presentation/widgets/text_input/label_outlined_text_input.dart';
 import 'package:assesment/core_views/color/color_pallete.dart';
 import 'package:assesment/core_views/color/color_scheme_light.dart';
 import 'package:assesment/features/login/presentation/controller/login_controller.dart';

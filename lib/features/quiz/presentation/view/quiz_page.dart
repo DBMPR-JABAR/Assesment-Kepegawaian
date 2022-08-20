@@ -1,7 +1,7 @@
-import 'package:assesment/common/presentation/widget/app_bar/app_bar_builder.dart';
-import 'package:assesment/common/presentation/widget/quiz/answer/quiz_answer.dart';
-import 'package:assesment/common/presentation/widget/quiz/question/quiz_question.dart';
-import 'package:assesment/common/presentation/widget/quiz/quiz.dart';
+import 'package:assesment/common/presentation/widgets/app_bar/app_bar_builder.dart';
+import 'package:assesment/features/quiz/presentation/widgets/quiz/answer/quiz_answer.dart';
+import 'package:assesment/features/quiz/presentation/widgets/quiz/question/quiz_question.dart';
+import 'package:assesment/features/quiz/presentation/widgets/quiz/quiz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
