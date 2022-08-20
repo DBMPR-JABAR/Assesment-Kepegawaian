@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 abstract class TemanJabarTheme {
   static ThemeData light() {
     return ThemeData(
-      unselectedWidgetColor: ColorUtils.fromHex(ColorPallete.gray_500),
+      unselectedWidgetColor: ColorPallete.gray_500,
       textTheme: _textLightTheme(),
       colorScheme: _colorLightScheme(),
       scaffoldBackgroundColor: Colors.white,
@@ -35,62 +35,73 @@ abstract class TemanJabarTheme {
         fontWeight: FontWeight.bold,
         color: TemanJabarColorSchemeLight.headerTextColor,
         fontFamily: "Lato",
+        height: 1.1,
       ),
       headline2: TextStyle(
         fontSize: 41.0,
         fontWeight: FontWeight.bold,
         color: TemanJabarColorSchemeLight.headerTextColor,
         fontFamily: "Lato",
+        height: 1.1,
       ),
       headline3: TextStyle(
         fontSize: 34.0,
         fontWeight: FontWeight.bold,
         color: TemanJabarColorSchemeLight.headerTextColor,
         fontFamily: "Lato",
+        height: 1.1,
       ),
       headline4: TextStyle(
         fontSize: 28.0,
         fontWeight: FontWeight.bold,
         color: TemanJabarColorSchemeLight.headerTextColor,
         fontFamily: "Lato",
+        height: 1.1,
       ),
       headline5: TextStyle(
         fontSize: 23.0,
         fontWeight: FontWeight.bold,
         color: TemanJabarColorSchemeLight.headerTextColor,
         fontFamily: "Lato",
+        height: 1.1,
       ),
       headline6: TextStyle(
         fontSize: 19.0,
         fontWeight: FontWeight.bold,
         color: TemanJabarColorSchemeLight.headerTextColor,
         fontFamily: "Lato",
+        height: 1.1,
       ),
       subtitle1: TextStyle(
         fontSize: 16.0,
         color: TemanJabarColorSchemeLight.headerTextColor,
         fontFamily: "Lato",
+        height: 1.25,
       ),
       subtitle2: TextStyle(
         fontSize: 13.0,
         color: TemanJabarColorSchemeLight.headerTextColor,
         fontFamily: "Lato",
+        height: 1.25,
       ),
       bodyText1: TextStyle(
         fontSize: 16.0,
         color: TemanJabarColorSchemeLight.bodyTextColor,
         fontFamily: "Lato",
+        height: 1.25,
       ),
       bodyText2: TextStyle(
         fontSize: 13.0,
         color: TemanJabarColorSchemeLight.bodyTextColor,
         fontFamily: "Lato",
+        height: 1.25,
       ),
       button: TextStyle(
         fontSize: 13.0,
         fontWeight: FontWeight.w700,
         color: TemanJabarColorSchemeLight.primaryColor,
         fontFamily: "Lato",
+        height: 1.25,
       ),
     );
   }

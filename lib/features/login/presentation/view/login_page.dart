@@ -82,7 +82,7 @@ class LoginPage extends GetView<LoginController> {
                         height: 5,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: ColorUtils.fromHex(ColorPallete.gray_300),
+                          color: ColorPallete.gray_300,
                         ),
                       ),
                       const SizedBox(

@@ -1,5 +1,6 @@
 import 'package:assesment/features/login/presentation/binding/login_binding.dart';
 import 'package:assesment/features/login/presentation/view/login_page.dart';
+import 'package:assesment/features/quiz/presentation/view/quiz_page.dart';
 import 'package:assesment/features/splash_screen/presentation/binding/splash_screen_binding.dart';
 import 'package:assesment/features/splash_screen/presentation/view/splash_screen_page.dart';
 import 'package:assesment/routes/app_routes.dart';
@@ -18,6 +19,10 @@ class AppPages {
       name: Routes.LOGIN,
       binding: LoginBinding(),
       page: () => const LoginPage(),
+    ),
+    GetPage(
+      name: Routes.QUIZ,
+      page: () => const QuizPage(),
     ),
   ];
 }

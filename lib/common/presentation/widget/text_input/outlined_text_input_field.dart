@@ -1,6 +1,5 @@
 import 'package:assesment/core_views/color/color_pallete.dart';
 import 'package:assesment/core_views/color/color_scheme_light.dart';
-import 'package:assesment/utils/color_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -87,7 +86,7 @@ class _OutlinedTextInputFieldState extends State<OutlinedTextInputField> {
       style: _isEnable
           ? context.textTheme.bodyText2
           : context.textTheme.bodyText2?.copyWith(
-              color: ColorUtils.fromHex(ColorPallete.gray_400),
+              color: ColorPallete.gray_400,
             ),
       controller: widget.textEditingController,
       enabled: _isEnable,
