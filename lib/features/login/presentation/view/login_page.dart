@@ -1,10 +1,9 @@
-import 'package:assesment/common/presentation/widgets/logo/app_logo.dart';
 import 'package:assesment/common/presentation/widgets/button/contained_button.dart';
+import 'package:assesment/common/presentation/widgets/logo/app_logo.dart';
 import 'package:assesment/common/presentation/widgets/text_input/label_outlined_text_input.dart';
 import 'package:assesment/core_views/color/color_pallete.dart';
-import 'package:assesment/core_views/color/color_scheme_light.dart';
+import 'package:assesment/extension/color_scheme_extension.dart';
 import 'package:assesment/features/login/presentation/controller/login_controller.dart';
-import 'package:assesment/utils/color_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -62,11 +61,12 @@ class LoginPage extends GetView<LoginController> {
             builder: (BuildContext context, ScrollController scrollController) {
               return Container(
                 decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(16),
-                      topLeft: Radius.circular(16),
-                    ),
-                    color: Colors.white),
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(16),
+                    topLeft: Radius.circular(16),
+                  ),
+                  color: Colors.white,
+                ),
                 child: SingleChildScrollView(
                   keyboardDismissBehavior:
                       ScrollViewKeyboardDismissBehavior.onDrag,
@@ -140,7 +140,7 @@ class LoginPage extends GetView<LoginController> {
                   fontFamily: "Intro",
                   fontSize: 11,
                   height: 1.25,
-                  color: TemanJabarColorSchemeLight.disabledTextColor,
+                  color: context.theme.colorScheme.disabledTextColor,
                 ),
               ),
             ),

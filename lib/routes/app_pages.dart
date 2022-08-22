@@ -1,3 +1,4 @@
+import 'package:assesment/features/dashboard/presentation/view/dashboard_page.dart';
 import 'package:assesment/features/login/presentation/binding/login_binding.dart';
 import 'package:assesment/features/login/presentation/view/login_page.dart';
 import 'package:assesment/features/quiz/presentation/view/quiz_page.dart';
@@ -23,6 +24,10 @@ class AppPages {
     GetPage(
       name: Routes.QUIZ,
       page: () => const QuizPage(),
+    ),
+    GetPage(
+      name: Routes.DASHBOARD,
+      page: () => const DashboardPage(),
     ),
   ];
 }

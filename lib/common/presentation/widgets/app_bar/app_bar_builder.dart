@@ -1,6 +1,4 @@
 import 'package:assesment/core_views/color/color_pallete.dart';
-import 'package:assesment/core_views/color/color_scheme_light.dart';
-import 'package:assesment/utils/color_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
@@ -24,13 +22,12 @@ class AppBarBuilder {
               statusBarIconBrightness: Brightness.dark,
             )
           : SystemUiOverlayStyle(
-              statusBarColor: TemanJabarColorSchemeLight.primaryVariantColor,
+              statusBarColor: context.theme.colorScheme.primary,
               statusBarBrightness: Brightness.dark,
               statusBarIconBrightness: Brightness.light,
             ),
-      backgroundColor: isWhiteBackground
-          ? Colors.white
-          : TemanJabarColorSchemeLight.primaryColor,
+      backgroundColor:
+          isWhiteBackground ? Colors.white : context.theme.colorScheme.primary,
       elevation: 0,
       flexibleSpace: Padding(
         padding: EdgeInsets.only(top: context.mediaQueryViewPadding.top),

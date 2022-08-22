@@ -1,5 +1,6 @@
 import 'package:assesment/core_views/color/color_pallete.dart';
 import 'package:assesment/core_views/color/color_scheme_light.dart';
+import 'package:assesment/extension/color_scheme_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -44,7 +45,7 @@ class _OutlinedTextInputFieldState extends State<OutlinedTextInputField> {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(8),
       borderSide: BorderSide(
-        color: TemanJabarColorSchemeLight.borderColor,
+        color: context.theme.colorScheme.borderColor,
         width: 1.5,
       ),
     );
@@ -54,7 +55,7 @@ class _OutlinedTextInputFieldState extends State<OutlinedTextInputField> {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(8),
       borderSide: BorderSide(
-        color: TemanJabarColorSchemeLight.borderColor.withOpacity(0.5),
+        color: context.theme.colorScheme.borderColor.withOpacity(0.5),
         width: 1.5,
       ),
     );
@@ -64,7 +65,7 @@ class _OutlinedTextInputFieldState extends State<OutlinedTextInputField> {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(8),
       borderSide: BorderSide(
-        color: TemanJabarColorSchemeLight.primaryColor,
+        color: context.theme.colorScheme.primary,
         width: 1.5,
       ),
     );
@@ -74,7 +75,7 @@ class _OutlinedTextInputFieldState extends State<OutlinedTextInputField> {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(8),
       borderSide: BorderSide(
-        color: TemanJabarColorSchemeLight.errorColor,
+        color: context.theme.colorScheme.error,
         width: 1.5,
       ),
     );
@@ -94,11 +95,12 @@ class _OutlinedTextInputFieldState extends State<OutlinedTextInputField> {
       decoration: InputDecoration(
         filled: true,
         fillColor: _isEnable
-            ? TemanJabarColorSchemeLight.inputFillColor
-            : TemanJabarColorSchemeLight.inputFillColor.withOpacity(0.5),
+            ? context.theme.colorScheme.inputFillColor
+            : context.theme.colorScheme.inputFillColor.withOpacity(0.5),
         hintText: widget.hint,
-        hintStyle: context.theme.textTheme.bodyText2
-            ?.copyWith(color: TemanJabarColorSchemeLight.borderColor),
+        hintStyle: context.theme.textTheme.bodyText2?.copyWith(
+          color: context.theme.colorScheme.borderColor,
+        ),
         contentPadding: const EdgeInsets.symmetric(
           horizontal: 16,
         ),

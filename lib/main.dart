@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Assesment Kepegawaian',
       theme: TemanJabarTheme.light(),
-      initialRoute: Routes.QUIZ,
+      initialRoute: Routes.SPLASH_SCREEN,
       getPages: AppPages.routes,
     );
   }
